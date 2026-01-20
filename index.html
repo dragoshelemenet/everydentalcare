@@ -1,0 +1,2433 @@
+ <!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="color-scheme" content="light" />
+
+  <!-- Language links (compact, directly under meta) -->
+  <style>
+    .langbar{
+      display:flex;
+      gap:.4rem;
+      justify-content:flex-end;
+      align-items:center;
+      padding:.35rem .6rem;Запись 
+      font-family:ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans", "Helvetica Neue", sans-serif;
+      font-size:12px;
+      line-height:1;
+    }
+    .langbar a{
+      text-decoration:none;
+      border:1px solid rgba(0,0,0,.12);
+      border-radius:999px;
+      padding:.35rem .55rem;
+      color:#0b1320;
+      background:#fff;
+    }
+    .langbar a:hover{ filter:brightness(.98); }
+  </style>
+
+
+  <title>Every Dental Care | Стоматологическая клиника</title>
+  <meta name="description" content="Every Dental Care: диагностика, профилактика, лечение зубов и десен, протезирование, имплантация. Детский, взрослый и возрастной прием." />
+
+<style>
+  :root{
+    --bg:#ffffff;
+    --text:#0b1320;
+    --muted:#586174;
+    --card:#ffffff;
+    --border: color-mix(in srgb, #0b1320 10%, transparent);
+    --shadow: 0 0.9rem 2.2rem color-mix(in srgb, #0b1320 12%, transparent);
+    --shadow-soft: 0 0.6rem 1.6rem color-mix(in srgb, #0b1320 10%, transparent);
+    --radius: clamp(0.9rem, 1.4vw, 1.35rem);
+    --radius-sm: clamp(0.7rem, 1.1vw, 1.05rem);
+
+    --primary:#0c7fa4;
+    --primary-2:#0b4d8a;
+    --accent:#11b5a4;
+    --ok:#067647;
+
+    --container-max:72rem;
+    --container-pad:clamp(1rem, 4vw, 2.25rem);
+    --section-pad:clamp(3rem, 7vw, 5.5rem);
+
+    --h1:clamp(1.7rem, 4.2vw, 3.1rem);
+    --h2:clamp(1.35rem, 3.1vw, 2.2rem);
+    --h3:clamp(1.05rem, 2.1vw, 1.4rem);
+    --p:clamp(0.98rem, 1.6vw, 1.1rem);
+    --small:clamp(0.85rem, 1.3vw, 0.95rem);
+
+    --gap:clamp(0.9rem, 2vw, 1.35rem);
+    --gap-lg:clamp(1.1rem, 3vw, 2rem);
+
+    --btn-h:clamp(2.75rem, 6.5vw, 3rem);
+    --ring:0 0 0 0.18rem color-mix(in srgb, var(--primary) 35%, transparent);
+  }
+
+  *{ box-sizing:border-box; }
+  html{
+    scroll-behavior:smooth;
+    scroll-padding-top:clamp(4.2rem, 8vw, 5.5rem);
+    background:var(--bg);
+    color:var(--text);
+    text-rendering:optimizeLegibility;
+    -webkit-text-size-adjust:100%;
+    overflow-x:clip;
+  }
+  body{
+    margin:0;
+    font-family:ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans", "Helvetica Neue", sans-serif;
+    background:var(--bg);
+    color:var(--text);
+    line-height:1.5;
+    overflow-x:clip;
+  }
+
+  img{ max-width:100%; height:auto; display:block; }
+  iframe{ max-width:100%; border:0; display:block; }
+  a{ color:inherit; text-decoration:none; }
+  button, input, textarea, select{ font:inherit; color:inherit; }
+  :focus-visible{ outline:none; box-shadow:var(--ring); border-radius:calc(var(--radius-sm) - 0.15rem); }
+  ::selection{ background: color-mix(in srgb, var(--primary) 25%, white); }
+
+  .container{
+    width:100%;
+    max-width:var(--container-max);
+    margin-inline:auto;
+    padding-inline:var(--container-pad);
+  }
+  .section{
+    padding-block:var(--section-pad);
+    background:var(--bg);
+  }
+
+  header{
+    position:sticky;
+    top:0;
+    z-index:50;
+    background: color-mix(in srgb, var(--bg) 92%, transparent);
+    backdrop-filter: blur(10px);
+    border-bottom:1px solid var(--border);
+  }
+  .topbar{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:var(--gap);
+    padding-block:clamp(0.75rem, 2.3vw, 1rem);
+    min-height:clamp(4rem, 8vw, 4.75rem);
+  }
+
+  /* compact header state: hamburger disappears after small scroll to free space */
+  header[data-compact="true"] .topbar{
+    padding-block:0.55rem;
+    min-height:3.65rem;
+  }
+  header[data-compact="true"] .hamburger{ display:none; }
+  header[data-compact="true"] .brand-logo{ width:clamp(2.05rem, 6vw, 2.35rem); }
+  header[data-compact="true"] .brand-title strong{ font-size:clamp(1.02rem, 2.2vw, 1.18rem); }
+  header[data-compact="true"] .btn{ padding-inline:clamp(0.95rem, 2.4vw, 1.15rem); }
+
+  .brand{
+    display:flex;
+    align-items:center;
+    gap:clamp(0.6rem, 1.7vw, 0.9rem);
+    min-width:0;
+  }
+  .brand-logo{
+    width:clamp(2.2rem, 8vw, 2.8rem);
+    aspect-ratio:1/1;
+    border-radius:999px;
+    overflow:hidden;
+    box-shadow:var(--shadow-soft);
+    border:1px solid var(--border);
+    background:#fff;
+    flex:0 0 auto;
+    position:relative;
+  }
+  .brand-logo img{ width:100%; height:100%; object-fit:cover; }
+  .brand-title{ display:flex; flex-direction:column; min-width:0; }
+  .brand-title strong{
+    font-size:clamp(1rem, 2vw, 1.15rem);
+    line-height:1.2;
+    letter-spacing:0.01em;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+  }
+  .brand-title span{
+    font-size:var(--small);
+    color:var(--muted);
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+  }
+
+  nav{ display:flex; align-items:center; gap:clamp(0.35rem, 1vw, 0.9rem); }
+  .nav-links{
+    display:none;
+    list-style:none;
+    margin:0;
+    padding:0;
+    gap:clamp(0.2rem, 0.8vw, 0.75rem);
+    align-items:center;
+  }
+  .nav-links a{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    padding:clamp(0.55rem, 1.4vw, 0.7rem) clamp(0.7rem, 1.6vw, 0.85rem);
+    border-radius:999px;
+    color: color-mix(in srgb, var(--text) 86%, var(--muted));
+    font-size:var(--small);
+    border:1px solid transparent;
+    line-height:1;
+    white-space:nowrap;
+  }
+  .nav-links a[aria-current="page"]{
+    border-color: color-mix(in srgb, var(--primary) 35%, transparent);
+    background: color-mix(in srgb, var(--primary) 9%, white);
+    color:var(--text);
+  }
+
+  .header-cta{
+    display:flex;
+    align-items:center;
+    gap:clamp(0.45rem, 1vw, 0.8rem);
+    flex:0 0 auto;
+  }
+
+  .btn{
+    appearance:none;
+    border:1px solid transparent;
+    border-radius:999px;
+    min-height:var(--btn-h);
+    padding:0 clamp(1rem, 3vw, 1.25rem);
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:0.55rem;
+    font-weight:650;
+    letter-spacing:0.01em;
+    cursor:pointer;
+    user-select:none;
+    touch-action:manipulation;
+    -webkit-tap-highlight-color: transparent;
+    background:var(--text);
+    color:#fff;
+    box-shadow:var(--shadow-soft);
+    transition:transform 160ms ease, box-shadow 160ms ease, background 160ms ease, border-color 160ms ease;
+    white-space:nowrap;
+    max-width:100%;
+  }
+  .btn--primary{
+    background: linear-gradient(135deg, var(--primary), color-mix(in srgb, var(--primary-2) 60%, var(--primary)));
+    border-color: color-mix(in srgb, var(--primary-2) 25%, transparent);
+  }
+  .btn--ghost{
+    background:#fff;
+    color:var(--text);
+    border-color:var(--border);
+    box-shadow:none;
+  }
+  .btn--soft{
+    background: color-mix(in srgb, var(--primary) 10%, white);
+    color:var(--text);
+    border-color: color-mix(in srgb, var(--primary) 18%, var(--border));
+    box-shadow:none;
+  }
+  .btn svg{ width:1.05em; height:1.05em; flex:0 0 auto; }
+
+  .hamburger{
+    width:clamp(2.75rem, 6.5vw, 3rem);
+    height:var(--btn-h);
+    border-radius:999px;
+    border:1px solid var(--border);
+    background:#fff;
+    box-shadow:none;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    cursor:pointer;
+    touch-action:manipulation;
+    -webkit-tap-highlight-color: transparent;
+    position:relative;
+    z-index:60;
+    transition:transform 160ms ease, box-shadow 160ms ease, background 160ms ease;
+  }
+  .hamburger-lines{ width:1.2rem; height:0.9rem; display:grid; gap:0.23rem; }
+  .hamburger-lines span{
+    height:0.12rem;
+    border-radius:999px;
+    background: color-mix(in srgb, var(--text) 80%, var(--muted));
+    display:block;
+    transition:transform 180ms ease, opacity 180ms ease;
+  }
+  .hamburger[aria-expanded="true"] .hamburger-lines span:nth-child(1){ transform: translateY(0.35rem) rotate(45deg); }
+  .hamburger[aria-expanded="true"] .hamburger-lines span:nth-child(2){ opacity:0; }
+  .hamburger[aria-expanded="true"] .hamburger-lines span:nth-child(3){ transform: translateY(-0.35rem) rotate(-45deg); }
+
+  .mobile-menu{
+    display:none;
+    padding-bottom:clamp(0.9rem, 2.3vw, 1.1rem);
+  }
+  .mobile-menu[data-open="true"]{ display:block; }
+  .mobile-menu ul{
+    list-style:none;
+    margin:0;
+    padding:0;
+    display:grid;
+    gap:0.55rem;
+  }
+  .mobile-menu a{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0.95rem 1rem;
+    border-radius:var(--radius-sm);
+    border:1px solid var(--border);
+    background:#fff;
+    min-height:var(--btn-h);
+    font-size:var(--p);
+    color:var(--text);
+  }
+  .mobile-menu a small{ color:var(--muted); font-size:var(--small); }
+
+  .hero{
+    padding-top:clamp(1.75rem, 4vw, 3rem);
+    padding-bottom:clamp(2.75rem, 6vw, 4.5rem);
+  }
+  .hero-grid{
+    display:grid;
+    gap:var(--gap-lg);
+    grid-template-columns:1fr;
+    align-items:center;
+  }
+  .kicker{
+    display:inline-flex;
+    align-items:center;
+    gap:0.55rem;
+    padding:0.45rem 0.75rem;
+    border-radius:999px;
+    border:1px solid color-mix(in srgb, var(--primary) 22%, var(--border));
+    background:#fff;
+    color: color-mix(in srgb, var(--text) 90%, var(--primary-2));
+    font-size:var(--small);
+    width:fit-content;
+    max-width:100%;
+  }
+  .kicker .dot{
+    width:0.55rem;
+    aspect-ratio:1/1;
+    border-radius:999px;
+    background: radial-gradient(circle at 30% 30%, var(--accent), var(--primary-2));
+    box-shadow: 0 0.35rem 0.95rem color-mix(in srgb, var(--primary) 30%, transparent);
+    flex:0 0 auto;
+  }
+  .hero h1{
+    margin:0.85rem 0 0.7rem;
+    font-size:var(--h1);
+    line-height:1.12;
+    letter-spacing:-0.02em;
+    max-width:22ch;
+    text-wrap:balance;
+  }
+  .hero p{
+    margin:0 0 1.1rem;
+    font-size:var(--p);
+    color:var(--muted);
+    max-width:55ch;
+  }
+  .hero-actions{
+    display:flex;
+    flex-wrap:wrap;
+    gap:0.65rem;
+    margin-top:1rem;
+  }
+  .hero-badges{
+    margin-top:clamp(1.1rem, 2.5vw, 1.5rem);
+    display:grid;
+    gap:0.55rem;
+    grid-template-columns: repeat(auto-fit, minmax(min(10rem, 100%), 1fr));
+  }
+  .badge{
+    border:1px solid var(--border);
+    border-radius:var(--radius-sm);
+    padding:0.9rem;
+    background:#fff;
+    display:flex;
+    gap:0.8rem;
+    align-items:flex-start;
+    min-width:0;
+  }
+  .badge .ico{
+    width:2.25rem;
+    aspect-ratio:1/1;
+    border-radius:0.9rem;
+    display:grid;
+    place-items:center;
+    background: color-mix(in srgb, var(--primary) 12%, white);
+    border:1px solid color-mix(in srgb, var(--primary) 18%, var(--border));
+    flex:0 0 auto;
+  }
+  .badge .ico svg{ width:1.2rem; height:1.2rem; color: color-mix(in srgb, var(--primary-2) 70%, var(--primary)); }
+  .badge strong{
+    font-size:var(--small);
+    line-height:1.2;
+    overflow-wrap:anywhere;
+    word-break:break-word;
+    hyphens:auto;
+  }
+  .badge span{
+    display:block;
+    font-size:var(--small);
+    color:var(--muted);
+    margin-top:0.25rem;
+    overflow-wrap:anywhere;
+    word-break:break-word;
+    hyphens:auto;
+  }
+
+  /* FIX: force 1 column badges on very small screens */
+  @media (max-width:360px){
+    .hero-badges{ grid-template-columns:1fr; }
+    .badge{ padding:0.8rem; }
+  }
+
+  .hero-media{
+    border-radius:var(--radius);
+    border:1px solid var(--border);
+    background:#fff;
+    overflow:hidden;
+    box-shadow:var(--shadow);
+    display:grid;
+    gap:0;
+  }
+  .hero-media .media{
+    aspect-ratio:16/11;
+    background: linear-gradient(135deg,
+      color-mix(in srgb, var(--primary) 8%, white),
+      color-mix(in srgb, var(--primary-2) 6%, white)
+    );
+    position:relative;
+    overflow:hidden;
+  }
+  .hero-media img{ width:100%; height:100%; object-fit:cover; }
+  .hero-media .caption{
+    padding:clamp(0.9rem, 2.5vw, 1.2rem);
+    display:flex;
+    flex-wrap:wrap;
+    gap:0.55rem 0.75rem;
+    align-items:center;
+    justify-content:space-between;
+  }
+  .caption .left{ min-width:0; }
+  .caption strong{ display:block; font-size:var(--h3); line-height:1.2; margin:0; }
+  .caption small{ display:block; color:var(--muted); font-size:var(--small); margin-top:0.15rem; }
+
+  .section-head{
+    display:flex;
+    flex-direction:column;
+    gap:0.55rem;
+    margin-bottom:clamp(1.4rem, 3.2vw, 2rem);
+  }
+  .section-head h2{
+    margin:0;
+    font-size:var(--h2);
+    line-height:1.15;
+    letter-spacing:-0.01em;
+    text-wrap:balance;
+  }
+  .section-head p{
+    margin:0;
+    font-size:var(--p);
+    color:var(--muted);
+    max-width:70ch;
+  }
+
+  .grid{
+    display:grid;
+    gap:var(--gap);
+    grid-template-columns: repeat(auto-fit, minmax(min(16rem, 100%), 1fr));
+    align-items:stretch;
+  }
+
+  .card{
+    background:#fff;
+    border:1px solid var(--border);
+    border-radius:var(--radius);
+    overflow:hidden;
+    display:flex;
+    flex-direction:column;
+    min-width:0;
+  }
+  .card .thumb{
+    aspect-ratio:16/10;
+    min-height:10rem;
+    overflow:hidden;
+    background: color-mix(in srgb, var(--primary) 7%, white);
+    border-bottom:1px solid var(--border);
+    position:relative;
+  }
+  .card .thumb img{
+    display:block;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+  }
+  .card .body{
+    padding:clamp(1rem, 2.6vw, 1.25rem);
+    display:flex;
+    flex-direction:column;
+    gap:0.55rem;
+    flex:1 1 auto;
+    min-width:0;
+  }
+  .card h3{ margin:0; font-size:var(--h3); line-height:1.2; }
+  .card p{ margin:0; font-size:var(--p); color:var(--muted); }
+  .card .meta{
+    margin-top:auto;
+    display:flex;
+    flex-wrap:wrap;
+    gap:0.55rem;
+    align-items:center;
+    justify-content:space-between;
+  }
+
+  .tag{
+    display:inline-flex;
+    align-items:center;
+    gap:0.45rem;
+    padding:0.45rem 0.7rem;
+    border-radius:999px;
+    border:1px solid var(--border);
+    background:#fff;
+    font-size:var(--small);
+    color: color-mix(in srgb, var(--text) 78%, var(--muted));
+    min-height: calc(var(--btn-h) * 0.72);
+    white-space:nowrap;
+  }
+  .tag .mini{
+    width:0.55rem;
+    aspect-ratio:1/1;
+    border-radius:999px;
+    background: color-mix(in srgb, var(--primary) 50%, white);
+    flex:0 0 auto;
+  }
+
+  /* TEAM */
+  .team-wrap{
+    display:grid;
+    gap:var(--gap-lg);
+    grid-template-columns:1fr;
+    align-items:stretch;
+  }
+  .team-hero{
+    display:grid;
+    gap:var(--gap);
+    grid-template-columns:1fr;
+    align-items:stretch;
+  }
+  .team-photo{
+    border:1px solid var(--border);
+    border-radius:var(--radius);
+    overflow:hidden;
+    background:#fff;
+    box-shadow:var(--shadow-soft);
+  }
+  .team-photo .img{
+    aspect-ratio:16/10;
+    background: linear-gradient(135deg,
+      color-mix(in srgb, var(--primary) 8%, white),
+      color-mix(in srgb, var(--primary-2) 6%, white)
+    );
+  }
+  .team-photo .img img{ width:100%; height:100%; object-fit:cover; }
+  .team-photo .cap{
+    padding:0.95rem 1rem;
+    border-top:1px solid var(--border);
+    display:flex;
+    flex-wrap:wrap;
+    gap:0.55rem 0.75rem;
+    justify-content:space-between;
+    align-items:center;
+  }
+  .team-photo .cap strong{ font-size:var(--h3); line-height:1.2; }
+  .team-photo .cap small{ color:var(--muted); font-size:var(--small); }
+
+  .team-card{
+    border:1px solid var(--border);
+    border-radius:var(--radius);
+    background:#fff;
+    box-shadow:none;
+    padding:clamp(1rem, 2.6vw, 1.35rem);
+    display:grid;
+    gap:0.85rem;
+    min-width:0;
+  }
+  .team-list{
+    margin:0;
+    padding:0;
+    list-style:none;
+    display:grid;
+    gap:0.55rem;
+    color:var(--muted);
+    font-size:var(--p);
+  }
+  .team-list li{
+    display:flex;
+    gap:0.6rem;
+    align-items:flex-start;
+    min-width:0;
+  }
+  .team-list svg{
+    width:1.1rem; height:1.1rem;
+    margin-top:0.2rem;
+    color: color-mix(in srgb, var(--ok) 75%, var(--primary));
+    flex:0 0 auto;
+  }
+
+  /* TESTIMONIALS */
+  .t-wrap{
+    display:grid;
+    gap:var(--gap-lg);
+    grid-template-columns:1fr; /* FIX: always full width, no empty second column */
+    align-items:start;
+  }
+  .t-shell{
+    border:1px solid var(--border);
+    border-radius:var(--radius);
+    background:#fff;
+    box-shadow:var(--shadow-soft);
+    overflow:hidden;
+  }
+  .t-viewport{ position:relative; overflow:hidden; }
+  .t-track{
+    display:flex;
+    width:100%;
+    transform: translateX(0);
+    transition: transform 420ms ease;
+    will-change: transform;
+  }
+  .t-item{
+    flex:0 0 100%;
+    padding:clamp(1rem, 2.6vw, 1.35rem);
+    display:flex;
+    flex-direction:column;
+    gap:0.85rem;
+    min-width:0;
+  }
+  .t-quote{ font-size:var(--p); color:var(--text); line-height:1.55; margin:0; }
+  .t-who{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:0.75rem;
+    flex-wrap:wrap;
+  }
+  .t-who strong{ font-size:var(--small); }
+  .stars{ display:inline-flex; gap:0.18rem; align-items:center; }
+  .stars svg{ width:1rem; height:1rem; color: color-mix(in srgb, var(--accent) 85%, var(--primary)); }
+  .t-controls{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:0.75rem;
+    padding:0.9rem;
+    border-top:1px solid var(--border);
+  }
+  .t-buttons{ display:flex; gap:0.6rem; }
+  .icon-btn{
+    min-height:var(--btn-h);
+    min-width:var(--btn-h);
+    border-radius:999px;
+    border:1px solid var(--border);
+    background:#fff;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    cursor:pointer;
+    -webkit-tap-highlight-color: transparent;
+    transition: transform 160ms ease, background 160ms ease, box-shadow 160ms ease;
+  }
+  .icon-btn svg{ width:1.15rem; height:1.15rem; }
+  .dots{
+    display:flex;
+    gap:0.45rem;
+    align-items:center;
+    flex-wrap:wrap;
+    justify-content:center;
+    margin-inline:auto;
+  }
+  .dotbtn{
+    width:0.7rem;
+    aspect-ratio:1/1;
+    border-radius:999px;
+    border:1px solid var(--border);
+    background:#fff;
+    cursor:pointer;
+    -webkit-tap-highlight-color: transparent;
+    transition: transform 160ms ease, background 160ms ease, border-color 160ms ease;
+  }
+  .dotbtn[aria-current="true"]{
+    background: color-mix(in srgb, var(--primary) 55%, white);
+    border-color: color-mix(in srgb, var(--primary) 30%, var(--border));
+    transform: scale(1.08);
+  }
+
+  /* Make testimonials heading not squished on desktop */
+  #testimonials .section-head p{ max-width:none; }
+  @media (min-width:768px){
+    #testimonials .section-head{ margin-bottom:clamp(1.6rem, 3vw, 2.2rem); }
+    #testimonials .section-head h2{ font-size:clamp(1.7rem, 2.7vw, 2.6rem); }
+    #testimonials .section-head p{ font-size:clamp(1.05rem, 1.35vw, 1.25rem); line-height:1.65; }
+  }
+
+  /* PRICING */
+  .pricing-grid{
+    display:grid;
+    gap:var(--gap);
+    grid-template-columns: repeat(auto-fit, minmax(min(18rem, 100%), 1fr));
+    align-items:stretch;
+  }
+  .plan{ display:flex; flex-direction:column; min-width:0; position:relative; isolation:isolate; }
+  .price{
+    font-size:clamp(1.55rem, 3.5vw, 2.25rem);
+    font-weight:850;
+    letter-spacing:-0.02em;
+    margin:0;
+    line-height:1.1;
+  }
+  .sub{ font-size:var(--small); color:var(--muted); margin-top:0.15rem; }
+  .list{
+    margin:0.65rem 0 0;
+    padding:0;
+    list-style:none;
+    display:grid;
+    gap:0.55rem;
+    color:var(--muted);
+    font-size:var(--p);
+  }
+  .list li{
+    display:flex;
+    gap:0.6rem;
+    align-items:flex-start;
+    min-width:0;
+  }
+  .list svg{
+    width:1.1rem; height:1.1rem;
+    margin-top:0.2rem;
+    color: color-mix(in srgb, var(--ok) 75%, var(--primary));
+    flex:0 0 auto;
+  }
+  .plan[data-featured="true"]{
+    box-shadow:var(--shadow);
+    border-color: color-mix(in srgb, var(--primary) 25%, var(--border));
+  }
+  .ribbon{
+    position:absolute;
+    top:clamp(0.8rem, 2vw, 1rem);
+    right:clamp(0.8rem, 2vw, 1rem);
+    padding:0.45rem 0.7rem;
+    border-radius:999px;
+    border:1px solid color-mix(in srgb, var(--primary) 18%, var(--border));
+    background:#fff;
+    font-size:var(--small);
+    font-weight:750;
+    color: color-mix(in srgb, var(--primary-2) 60%, var(--text));
+    box-shadow:var(--shadow-soft);
+    z-index:2;
+    white-space:nowrap;
+    max-width:100%;
+  }
+
+  /* FAQ */
+  .faq{ display:grid; gap:0.65rem; }
+  .faq details{
+    border:1px solid var(--border);
+    border-radius:var(--radius);
+    background:#fff;
+    overflow:hidden;
+    box-shadow:none;
+  }
+  .faq summary{
+    list-style:none;
+    cursor:pointer;
+    padding:clamp(1rem, 2.6vw, 1.2rem);
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:1rem;
+    font-size:var(--p);
+    font-weight:700;
+    min-height:var(--btn-h);
+  }
+  .faq summary::-webkit-details-marker{ display:none; }
+  .faq .chev{
+    width:1.2rem;
+    height:1.2rem;
+    flex:0 0 auto;
+    transition:transform 180ms ease;
+    color: color-mix(in srgb, var(--text) 70%, var(--muted));
+  }
+  .faq details[open] .chev{ transform: rotate(180deg); }
+  .faq .content{
+    padding:0 clamp(1rem, 2.6vw, 1.2rem) clamp(1rem, 2.6vw, 1.2rem);
+    color:var(--muted);
+    font-size:var(--p);
+    border-top:1px solid var(--border);
+  }
+
+  /* CONTACT */
+  .contact-card{
+    border:1px solid var(--border);
+    border-radius:var(--radius);
+    background:#fff;
+    padding:clamp(1rem, 2.6vw, 1.35rem);
+    box-shadow:none;
+    display:grid;
+    gap:0.85rem;
+    min-width:0;
+  }
+  .contact-lines{
+    display:grid;
+    gap:0.65rem;
+    font-size:var(--p);
+    color:var(--muted);
+  }
+  .line{
+    display:flex;
+    gap:0.7rem;
+    align-items:flex-start;
+    min-width:0;
+  }
+  .line svg{
+    width:1.1rem; height:1.1rem;
+    margin-top:0.25rem;
+    color: color-mix(in srgb, var(--primary-2) 60%, var(--primary));
+    flex:0 0 auto;
+  }
+  .line a{
+    color: color-mix(in srgb, var(--primary-2) 70%, var(--primary));
+    text-decoration:underline;
+    text-underline-offset:0.16em;
+    overflow-wrap:anywhere;
+  }
+  .hint{ font-size:var(--small); color:var(--muted); }
+
+  .socials{
+    display:flex;
+    gap:0.6rem;
+    flex-wrap:wrap;
+    align-items:center;
+  }
+  .social-link{
+    display:inline-flex;
+    align-items:center;
+    gap:0.55rem;
+    min-height:calc(var(--btn-h) * 0.86);
+    padding:0 0.95rem;
+    border-radius:999px;
+    border:1px solid var(--border);
+    background:#fff;
+    color: color-mix(in srgb, var(--text) 86%, var(--muted));
+    box-shadow:none;
+    -webkit-tap-highlight-color: transparent;
+    transition: transform 160ms ease, background 160ms ease, box-shadow 160ms ease;
+  }
+  .social-link svg{ width:1.05rem; height:1.05rem; }
+
+  .location-grid{
+    display:grid;
+    gap:var(--gap-lg);
+    grid-template-columns:1fr;
+    align-items:start;
+  }
+  .location-stack{
+    display:grid;
+    gap:var(--gap);
+    min-width:0;
+  }
+  .mapbox{
+    border:1px solid var(--border);
+    border-radius:var(--radius);
+    overflow:hidden;
+    background:#fff;
+    box-shadow:var(--shadow-soft);
+    display:grid;
+    gap:0;
+    min-width:0;
+  }
+  .mapbox .map{
+    aspect-ratio:1/1;
+    width:100%;
+    background: linear-gradient(135deg,
+      color-mix(in srgb, var(--primary) 8%, white),
+      color-mix(in srgb, var(--primary-2) 6%, white)
+    );
+    position:relative;
+    overflow:hidden;
+  }
+  .mapbox iframe{ width:100%; height:100%; }
+  .mapbox .footer{
+    padding:0.9rem 1rem;
+    border-top:1px solid var(--border);
+    display:flex;
+    gap:0.7rem;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    align-items:center;
+  }
+  .mapbox .footer small{ color:var(--muted); font-size:var(--small); }
+
+  footer{
+    border-top:1px solid var(--border);
+    background:#fff;
+    padding-block:clamp(2rem, 5vw, 3rem);
+  }
+  .footer-grid{
+    display:grid;
+    gap:var(--gap-lg);
+    grid-template-columns:1fr;
+    align-items:start;
+  }
+  .foot-links{
+    display:grid;
+    gap:0.55rem;
+    font-size:var(--p);
+    color:var(--muted);
+  }
+  .foot-links a{
+    color: color-mix(in srgb, var(--primary-2) 70%, var(--primary));
+    text-decoration:underline;
+    text-underline-offset:0.18em;
+    width:fit-content;
+    max-width:100%;
+    overflow-wrap:anywhere;
+  }
+  .legal{
+    margin-top:clamp(1rem, 2vw, 1.5rem);
+    color:var(--muted);
+    font-size:var(--small);
+    border-top:1px solid var(--border);
+    padding-top:1rem;
+  }
+
+  .mobile-cta{
+    position:sticky;
+    bottom:0;
+    z-index:45;
+    background: color-mix(in srgb, var(--bg) 92%, transparent);
+    backdrop-filter: blur(10px);
+    border-top:1px solid var(--border);
+    padding:0.65rem var(--container-pad);
+    display:grid;
+    gap:0.65rem;
+  }
+  .mobile-cta .row{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:0.65rem;
+    align-items:center;
+  }
+  .mobile-cta .btn{ width:100%; min-height:var(--btn-h); }
+
+  .to-top{
+    position:fixed;
+    right:var(--container-pad);
+    bottom:calc(var(--btn-h) + 1.25rem);
+    z-index:60;
+    opacity:0;
+    pointer-events:none;
+    transform: translateY(0.6rem);
+    transition: opacity 180ms ease, transform 180ms ease;
+  }
+  .to-top[data-show="true"]{ opacity:1; pointer-events:auto; transform: translateY(0); }
+  .to-top .icon-btn{
+    background:#fff;
+    box-shadow:var(--shadow-soft);
+    border-color:var(--border);
+  }
+
+  .img-fallback{ position:relative; }
+  .img-fallback::after{
+    content: attr(data-fallback);
+    position:absolute;
+    inset:0;
+    display:grid;
+    place-items:center;
+    padding:1rem;
+    text-align:center;
+    font-size:var(--small);
+    color: color-mix(in srgb, var(--text) 55%, var(--muted));
+    background: linear-gradient(135deg,
+      color-mix(in srgb, var(--primary) 7%, white),
+      color-mix(in srgb, var(--primary-2) 5%, white)
+    );
+    z-index:2;
+    pointer-events:none;
+  }
+  .img-fallback img{ opacity:0; }
+
+  .reveal{
+    opacity:0;
+    transform: translateY(0.6rem);
+    transition: opacity 420ms ease, transform 420ms ease;
+  }
+  .reveal[data-in="true"]{ opacity:1; transform: translateY(0); }
+
+  /* GALLERY / VIRTUAL TOUR - FIXED responsive */
+  .vt-grid{
+    display:grid;
+    gap:var(--gap-lg);
+    grid-template-columns:1fr;
+    align-items:stretch;
+  }
+  .vt-main{
+    margin:0;
+    border:1px solid var(--border);
+    border-radius:var(--radius);
+    overflow:hidden;
+    background:#fff;
+    box-shadow:var(--shadow-soft);
+    display:grid;
+  }
+  .vt-main button,
+  .vt-main a{ display:block; width:100%; }
+  .vt-main-img{
+    width:100%;
+    height:auto;
+    aspect-ratio:16/10;
+    object-fit:cover;
+    background: linear-gradient(135deg,
+      color-mix(in srgb, var(--primary) 8%, white),
+      color-mix(in srgb, var(--primary-2) 6%, white)
+    );
+  }
+  .vt-cap{
+    padding:0.95rem 1rem;
+    border-top:1px solid var(--border);
+    display:flex;
+    flex-wrap:wrap;
+    gap:0.65rem 0.85rem;
+    align-items:center;
+    justify-content:space-between;
+  }
+  .vt-cap-left{ min-width:0; }
+  .vt-cap-left strong{ display:block; font-size:var(--h3); line-height:1.2; }
+  .vt-cap-left small{ display:block; color:var(--muted); font-size:var(--small); margin-top:0.15rem; }
+
+  .vt-thumbs{
+    display:grid;
+    gap:var(--gap);
+    grid-template-columns: repeat(2, minmax(0,1fr));
+  }
+  .vt-thumb{
+    display:block;
+    border-radius:var(--radius-sm);
+    overflow:hidden;
+    border:1px solid var(--border);
+    background:#fff;
+    aspect-ratio:1/1;
+    position:relative;
+    cursor:pointer;
+    -webkit-tap-highlight-color: transparent;
+    transition: transform 160ms ease, box-shadow 160ms ease, border-color 160ms ease;
+  }
+  .vt-thumb img{ width:100%; height:100%; object-fit:cover; }
+  .vt-thumb::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background: linear-gradient(180deg, transparent, color-mix(in srgb, #0b1320 30%, transparent));
+    opacity:0;
+    transition: opacity 160ms ease;
+    pointer-events:none;
+  }
+
+  /* LIGHTBOX (popup instead of new window) */
+  .lightbox{
+    position:fixed;
+    inset:0;
+    z-index:999;
+    display:none;
+    background: color-mix(in srgb, #0b1320 70%, transparent);
+    backdrop-filter: blur(8px);
+    padding:clamp(0.9rem, 3vw, 1.4rem);
+  }
+  .lightbox[data-open="true"]{ display:grid; }
+  .lb-panel{
+    width:min(64rem, 100%);
+    margin:auto;
+    background:#fff;
+    border-radius:var(--radius);
+    border:1px solid color-mix(in srgb, #0b1320 14%, transparent);
+    box-shadow:var(--shadow);
+    overflow:hidden;
+    display:grid;
+    grid-template-rows:auto 1fr auto;
+    max-height:min(92vh, 56rem);
+  }
+  .lb-top{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:0.75rem;
+    padding:0.8rem 0.9rem;
+    border-bottom:1px solid var(--border);
+    background:#fff;
+  }
+  .lb-title{
+    min-width:0;
+    display:flex;
+    flex-direction:column;
+    gap:0.1rem;
+  }
+  .lb-title strong{ font-size:var(--small); line-height:1.2; }
+  .lb-title span{ font-size:var(--small); color:var(--muted); }
+  .lb-x{
+    min-height:var(--btn-h);
+    min-width:var(--btn-h);
+    border-radius:999px;
+    border:1px solid var(--border);
+    background:#fff;
+    cursor:pointer;
+    -webkit-tap-highlight-color: transparent;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .lb-x svg{ width:1.1rem; height:1.1rem; }
+  .lb-mid{
+    position:relative;
+    background: color-mix(in srgb, var(--primary) 6%, white);
+    display:grid;
+    place-items:center;
+    overflow:hidden;
+  }
+  .lb-img{
+    max-width:100%;
+    max-height:100%;
+    width:auto;
+    height:auto;
+    object-fit:contain;
+  }
+  .lb-nav{
+    position:absolute;
+    inset:0;
+    pointer-events:none;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0.6rem;
+  }
+  .lb-nav .icon-btn{ pointer-events:auto; }
+  .lb-bottom{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:0.75rem;
+    padding:0.8rem 0.9rem;
+    border-top:1px solid var(--border);
+    background:#fff;
+  }
+  .lb-count{ font-size:var(--small); color:var(--muted); }
+
+  @media (prefers-reduced-motion: reduce){
+    html{ scroll-behavior:auto; }
+    .t-track{ transition:none; }
+    .btn,.icon-btn,.dotbtn,.nav-links a,.reveal,.to-top,.social-link,.vt-thumb{ transition:none !important; }
+    .reveal{ opacity:1; transform:none; }
+  }
+  @media (hover:hover){
+    .btn:hover{ transform: translateY(-0.06rem); box-shadow:var(--shadow); }
+    .btn--ghost:hover{
+      background: color-mix(in srgb, var(--primary) 6%, white);
+      border-color: color-mix(in srgb, var(--primary) 18%, var(--border));
+    }
+    .icon-btn:hover{
+      background: color-mix(in srgb, var(--primary) 7%, white);
+      transform: translateY(-0.06rem);
+      box-shadow:var(--shadow-soft);
+    }
+    .nav-links a:hover{
+      background: color-mix(in srgb, var(--primary) 7%, white);
+      border-color: color-mix(in srgb, var(--primary) 18%, transparent);
+      color:var(--text);
+    }
+    .dotbtn:hover{ transform: scale(1.08); }
+    .hamburger:hover{ background: color-mix(in srgb, var(--primary) 6%, white); }
+    .social-link:hover{
+      background: color-mix(in srgb, var(--primary) 6%, white);
+      transform: translateY(-0.06rem);
+      box-shadow:var(--shadow-soft);
+    }
+    .vt-thumb:hover{
+      transform: translateY(-0.06rem);
+      box-shadow:var(--shadow-soft);
+      border-color: color-mix(in srgb, var(--primary) 18%, var(--border));
+    }
+    .vt-thumb:hover::after{ opacity:1; }
+  }
+
+  @media (min-width:480px){
+    .hero-actions .btn{ min-width: clamp(10.5rem, 40vw, 12.5rem); }
+  }
+  @media (min-width:768px){
+    .hero-grid{ grid-template-columns:1.05fr 0.95fr; }
+    .location-grid{ grid-template-columns:1.05fr 0.95fr; }
+    .footer-grid{ grid-template-columns:1.2fr 0.8fr; }
+    .team-hero{ grid-template-columns:1.05fr 0.95fr; }
+    .mobile-cta{ display:none; }
+
+    .vt-grid{ grid-template-columns: 1.1fr 0.9fr; }
+    .vt-thumbs{ grid-template-columns: repeat(3, minmax(0,1fr)); }
+  }
+  @media (min-width:1024px){
+    .nav-links{ display:flex; }
+    .hamburger{ display:none; }
+    .mobile-menu{ display:none !important; }
+    .hero h1{ max-width:24ch; }
+  }
+  @media (min-width:1280px){
+    :root{ --container-max:78rem; }
+    .grid{ grid-template-columns: repeat(auto-fit, minmax(min(18rem, 100%), 1fr)); }
+  }
+  @media (min-width:1536px){
+    :root{ --container-max:86rem; }
+  }
+</style>
+</head>
+
+<body>
+  <a href="#main" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;">Перейти к содержимому</a>
+
+  <header id="siteHeader" data-compact="false">
+    <div class="container">
+      <div class="topbar" role="navigation" aria-label="Основная навигация">
+        <a class="brand" href="#top" aria-label="Every Dental Care - на главную">
+          <div class="brand-logo" aria-hidden="true">
+            <img src="/logo.png" alt="Логотип Every Dental Care" loading="eager" decoding="async" />
+          </div>
+          <div class="brand-title">
+            <strong>EveryDentalCare</strong>
+          </div>
+        </a>
+
+        <nav class="header-cta" aria-label="Навигация и CTA">
+          <ul class="nav-links" id="navLinks">
+            <li><a href="#services" data-nav="services">Услуги</a></li>
+            <li><a href="#gallery" data-nav="gallery">Фото</a></li>
+            <li><a href="#team" data-nav="team">Команда</a></li>
+            <li><a href="#testimonials" data-nav="testimonials">Отзывы</a></li>
+            <li><a href="#pricing" data-nav="pricing">Цены</a></li>
+            <li><a href="#faq" data-nav="faq">FAQ</a></li>
+            <li><a href="#location" data-nav="location">Контакты и карта</a></li>
+          </ul>
+
+  <div class="langbar" aria-label="Language">
+    <a href="/en" hreflang="en">English</a>
+    <a href="/ro" hreflang="ro">Română</a>
+  </div>
+          <button class="hamburger" id="hamburger" aria-label="Открыть меню" aria-controls="mobileMenu" aria-expanded="false" type="button">
+            <span class="hamburger-lines" aria-hidden="true">
+              <span></span><span></span><span></span>
+            </span>
+          </button>
+        </nav>
+      </div>
+
+      <div class="mobile-menu" id="mobileMenu" data-open="false">
+        <ul>
+          <li><a href="#services" data-mnav>Услуги <small>7 направлений</small></a></li>
+          <li><a href="#gallery" data-mnav>Фото <small>Галерея</small></a></li>
+          <li><a href="#team" data-mnav>Команда <small>Фото и подход</small></a></li>
+          <li><a href="#testimonials" data-mnav>Отзывы <small>Пациенты</small></a></li>
+          <li><a href="#pricing" data-mnav>Цены <small>Планы</small></a></li>
+          <li><a href="#faq" data-mnav>FAQ <small>Ответы</small></a></li>
+          <li><a href="#location" data-mnav>Контакты и карта <small>Адрес</small></a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="section hero" id="top">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="reveal">
+            <div class="kicker">
+              <span class="dot" aria-hidden="true"></span>
+              <span>Диагностика,лечение, имплантация</span>
+            </div>
+
+            <h1>Премиальная стоматология для всей семьи</h1>
+            <p>Диагностика, профилактика и лечение зубов и дёсен, протезирование и имплантация. Детский, взрослый и возрастной приём.</p>
+
+            <div class="hero-actions">
+              <a class="btn btn--primary" href="#location" aria-label="Записаться на прием">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M7 3v3M17 3v3M4.5 8h15" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+                  <path d="M6.5 21h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2h-11c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2Z" stroke="currentColor" stroke-width="1.7"/>
+                  <path d="M8 12h3M8 15h7" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+                </svg>
+                Записаться
+              </a>
+
+              <a class="btn btn--ghost" href="tel:+37379314614" aria-label="Позвонить">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M7.5 10.2c1.6 3.1 3.8 5.3 6.9 6.9l2.3-2.3c.4-.4 1-.5 1.5-.3 1 .4 2.1.6 3.3.6.8 0 1.5.7 1.5 1.5v3.4c0 .8-.7 1.5-1.5 1.5C10.9 21.5 2.5 13.1 2.5 2.5 2.5 1.7 3.2 1 4 1h3.4c.8 0 1.5.7 1.5 1.5 0 1.2.2 2.3.6 3.3.2.5.1 1.1-.3 1.5L7.5 10.2Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
+                </svg>
+                Позвонить
+              </a>
+
+              <a class="btn btn--soft" href="https://maps.app.goo.gl/swWyubsmqRcf2yvh8" target="_blank" rel="noopener noreferrer" aria-label="Открыть Google Maps">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M12 21s7-4.4 7-11a7 7 0 1 0-14 0c0 6.6 7 11 7 11Z" stroke="currentColor" stroke-width="1.7"/>
+                  <path d="M12 12.2a2.2 2.2 0 1 0 0-4.4 2.2 2.2 0 0 0 0 4.4Z" stroke="currentColor" stroke-width="1.7"/>
+                </svg>
+                Открыть карту
+              </a>
+
+              <a class="btn btn--soft" href="https://t.me/everydentalcare" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M21.2 4.6 3.6 11.7c-.9.4-.8 1.7.2 2l4.3 1.4 1.6 5.2c.3.9 1.5 1 2 .2l2.7-4.1 4.7 3.5c.7.5 1.7.1 1.9-.8l2.6-13.3c.2-1-.7-1.8-1.7-1.3Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
+                  <path d="M8.2 15.1 19.6 6.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+                </svg>
+                Telegram
+              </a>
+            </div>
+
+            <div class="hero-badges">
+              <div class="badge">
+                <div class="ico" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none">
+                    <path d="M20 6l-9 12-4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+                <div style="min-width:0">
+                  <strong>Бережный подход</strong>
+                  <span>Объясняем план лечения просто и по шагам</span>
+                </div>
+              </div>
+
+              <div class="badge">
+                <div class="ico" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none">
+                    <path d="M12 3l2.3 4.7L19.5 8l-3.7 3.6.9 5.2L12 14.8 7.3 16.8l.9-5.2L4.5 8l5.2-.3L12 3Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+                <div style="min-width:0">
+                  <strong>Премиальный сервис</strong>
+                  <span>Комфорт,чистота, современный кабинет</span>
+                </div>
+              </div>
+
+              <div class="badge">
+                <div class="ico" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none">
+                    <path d="M12 18a6 6 0 1 0 0-12 6 6 0 0 0 0 12Z" stroke="currentColor" stroke-width="1.7"/>
+                    <path d="M12 2.5v2.2M12 19.3v2.2M21.5 12h-2.2M4.7 12H2.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+                    <path d="M18.6 5.4l-1.6 1.6M7 17l-1.6 1.6M18.6 18.6 17 17M7 7 5.4 5.4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+                  </svg>
+                </div>
+                <div style="min-width:0">
+                  <strong>Для всей семьи</strong>
+                  <span>Детский, взрослый и возрастной приём</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-media reveal">
+            <div class="media">
+              <img src="/hero.png" alt="Клиника Every Dental Care" loading="lazy" decoding="async" />
+            </div>
+            <div class="caption">
+              <div class="left">
+                <strong>Every Dental Care</strong>
+                <small>str. Zelinski 33/1</small>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY / VIRTUAL TOUR -->
+    <section class="section" id="gallery">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Посетите клинику виртуально</h2>
+          <p>Фото кабинета и атмосферы. Нажмите на любое фото,откроется popup.</p>
+        </div>
+
+        <div class="vt-grid">
+          <figure class="vt-main reveal" aria-label="Главное фото клиники">
+            <a href="/gallery12.png" data-lightbox data-title="Every Dental Care" data-subtitle="Интерьер клиники">
+              <img class="vt-main-img" src="/gallery12.png" alt="Every Dental Care - интерьер" loading="lazy" decoding="async" />
+            </a>
+            <figcaption class="vt-cap">
+              <div class="vt-cap-left">
+                <strong>Every Dental Care</strong>
+                <small>Современная клиника,оборудование последнего поколения</small>
+              </div>
+            </figcaption>
+          </figure>
+
+          <div class="vt-thumbs reveal" aria-label="Галерея фото">
+            <a class="vt-thumb" href="/gallery122.jpg" data-lightbox data-title="Фото 1" data-subtitle="Every Dental Care">
+              <img src="/gallery122.jpg" alt="Фото 1" loading="lazy" decoding="async" />
+            </a>
+            <a class="vt-thumb" href="/gallery03.png" data-lightbox data-title="Фото 2" data-subtitle="Every Dental Care">
+              <img src="/gallery03.png" alt="Фото 2" loading="lazy" decoding="async" />
+            </a>
+            <a class="vt-thumb" href="/gallery1.png" data-lightbox data-title="Фото 3" data-subtitle="Every Dental Care">
+              <img src="/gallery1.png" alt="Фото 3" loading="lazy" decoding="async" />
+            </a>
+            <a class="vt-thumb" href="/gallery15.jpg" data-lightbox data-title="Фото 4" data-subtitle="Every Dental Care">
+              <img src="/gallery15.jpg" alt="Фото 4" loading="lazy" decoding="async" />
+            </a>
+            <a class="vt-thumb" href="/gallery16.jpg" data-lightbox data-title="Фото 5" data-subtitle="Every Dental Care">
+              <img src="/gallery16.jpg" alt="Фото 5" loading="lazy" decoding="async" />
+            </a>
+            <a class="vt-thumb" href="/gallery18.jpg" data-lightbox data-title="Фото 6" data-subtitle="Every Dental Care">
+              <img src="/gallery18.jpg" alt="Фото 6" loading="lazy" decoding="async" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Услуги</h2>
+          <p>Полный спектр стоматологии: от профилактики и терапии до ортопедии, имплантации и эстетики.</p>
+        </div>
+
+        <div class="grid">
+          <article class="card reveal">
+            <div class="thumb"><img src="/1.png" alt="Диагностика" loading="lazy" decoding="async" /></div>
+            <div class="body">
+              <h3>Диагностика</h3>
+              <p>Точный осмотр и план лечения: выявляем причину,а не маскируем симптомы.</p>
+              <div class="meta">
+                <span class="tag"><span class="mini"></span> Быстро и понятно</span>
+                <a class="btn btn--ghost" href="#location">Записаться</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="thumb"><img src="/2.png" alt="Профилактика и гигиена" loading="lazy" decoding="async" /></div>
+            <div class="body">
+              <h3>Профилактика</h3>
+              <p>Профессиональная гигиена,рекомендации и контроль для долгого результата.</p>
+              <div class="meta">
+                <span class="tag"><span class="mini"></span> Защита эмали</span>
+                <a class="btn btn--ghost" href="#location">Записаться</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="thumb"><img src="/3.png" alt="Терапия" loading="lazy" decoding="async" /></div>
+            <div class="body">
+              <h3>Терапия</h3>
+              <p>Лечение кариеса,пульпита и заболеваний дёсен с бережным подходом.</p>
+              <div class="meta">
+                <span class="tag"><span class="mini"></span> Без лишнего стресса</span>
+                <a class="btn btn--ghost" href="#location">Записаться</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="thumb"><img src="/4.png" alt="Эндодонтия" loading="lazy" decoding="async" /></div>
+            <div class="body">
+              <h3>Эндодонтия</h3>
+              <p>Лечение корневых каналов и сложные случаи с точной техникой.</p>
+              <div class="meta">
+                <span class="tag"><span class="mini"></span> Точное лечение</span>
+                <a class="btn btn--ghost" href="#location">Записаться</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="thumb"><img src="/service5.png" alt="Ортопедия и протезирование" loading="lazy" decoding="async" /></div>
+            <div class="body">
+              <h3>Ортопедия</h3>
+              <p>Протезирование и восстановление улыбки: функционально и эстетично.</p>
+              <div class="meta">
+                <span class="tag"><span class="mini"></span> Эстетика + функция</span>
+                <a class="btn btn--ghost" href="#location">Записаться</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="thumb"><img src="/service6.png" alt="Имплантация" loading="lazy" decoding="async" /></div>
+            <div class="body">
+              <h3>Имплантация</h3>
+              <p>Современные решения для замещения зубов с долгосрочным результатом.</p>
+              <div class="meta">
+                <span class="tag"><span class="mini"></span> Надежно надолго</span>
+                <a class="btn btn--ghost" href="#location">Записаться</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="thumb"><img src="/7.png" alt="Отбеливание зубов" loading="lazy" decoding="async" /></div>
+            <div class="body">
+              <h3>Отбеливание зубов</h3>
+              <p>Эстетическое отбеливание с подбором безопасного протокола под вашу эмаль и чувствительность.</p>
+              <div class="meta">
+                <span class="tag"><span class="mini"></span> Эстетика улыбки</span>
+                <a class="btn btn--ghost" href="#location">Записаться</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- TEAM -->
+    <section class="section" id="team">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Врач и команда</h2>
+          <p>Командная работа, распределение ресурсов и индивидуальный подход к каждому приёму дают стабильный результат и уверенное лечение.</p>
+        </div>
+
+        <div class="team-wrap">
+          <div class="team-hero">
+            <div class="team-photo reveal" aria-label="Общая фотография команды">
+              <div class="img">
+                <img src="/team.png" alt="Команда Every Dental Care" loading="lazy" decoding="async" />
+              </div>
+              <div class="cap">
+                <div style="min-width:0">
+                  <strong>Every Dental Care</strong>
+                  <small>Наша сила в команде и стандарте качества</small>
+                </div>
+                <span class="tag" aria-label="Опыт и подход"><span class="mini"></span> Индивидуально под пациента</span>
+              </div>
+            </div>
+
+            <div class="team-card reveal" aria-label="Описание команды и специалистов">
+              <h3 style="margin:0;font-size:var(--h3);line-height:1.2;">Как мы работаем</h3>
+              <p style="margin:0;color:var(--muted);font-size:var(--p);">
+                Работа в команде помогает быстро и точно формировать план лечения. Мы распределяем задачи по специализациям,
+                а каждый приём подстраиваем под клиническую ситуацию, чтобы пациент получил предсказуемый результат.
+              </p>
+
+              <h3 style="margin:0.6rem 0 0;font-size:var(--h3);line-height:1.2;">Ключевые специалисты</h3>
+              <ul class="team-list">
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 6l-9 12-4-4" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  <span><strong style="color:var(--text);font-weight:750;">Slav Serghei</strong> - хирургия, ортопедия</span>
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 6l-9 12-4-4" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  <span><strong style="color:var(--text);font-weight:750;">Sîrghi Felicia</strong> - терапия, реставрация, отбеливание</span>
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 6l-9 12-4-4" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  <span><strong style="color:var(--text);font-weight:750;">Colțov Egor</strong> - эндодонтия, ортопедия, детский приём</span>
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 6l-9 12-4-4" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  <span><strong style="color:var(--text);font-weight:750;">Diuvenji Ghenadii</strong> - гигиена, профилактика, отбеливание</span>
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 6l-9 12-4-4" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  <span><strong style="color:var(--text);font-weight:750;">Barbacari Svetlana</strong> - ассистент, стерильность, комфорт</span>
+                </li>
+              </ul>
+
+              <div class="socials" style="margin-top:0.2rem;">
+                <a class="social-link" href="https://www.instagram.com/everydentalcare.md/" target="_blank" rel="noopener noreferrer" aria-label="Instagram Every Dental Care">
+                  <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="M8 3h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8a5 5 0 0 1 5-5Z" stroke="currentColor" stroke-width="1.7"/>
+                    <path d="M12 16.2a4.2 4.2 0 1 0 0-8.4 4.2 4.2 0 0 0 0 8.4Z" stroke="currentColor" stroke-width="1.7"/>
+                    <path d="M17.4 6.6h.01" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/>
+                  </svg>
+                  Instagram
+                </a>
+
+                <a class="social-link" href="https://t.me/everydentalcare" target="_blank" rel="noopener noreferrer" aria-label="Telegram Every Dental Care" data-tg>
+                  <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="M21.2 4.6 3.6 11.7c-.9.4-.8 1.7.2 2l4.3 1.4 1.6 5.2c.3.9 1.5 1 2 .2l2.7-4.1 4.7 3.5c.7.5 1.7.1 1.9-.8l2.6-13.3c.2-1-.7-1.8-1.7-1.3Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
+                    <path d="M8.2 15.1 19.6 6.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+                  </svg>
+                  Telegram
+                </a>
+              </div>
+
+              <div style="display:flex;gap:0.65rem;flex-wrap:wrap;margin-top:0.25rem;">
+                <a class="btn btn--primary" href="#location">Записаться</a>
+                <a class="btn btn--ghost" href="tel:+37379314614">Позвонить</a>
+              </div>
+              <div class="hint">Telegram: t.me/everydentalcare</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="section" id="testimonials">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Отзывы пациентов</h2>
+          <p>Коротко и по делу: что люди ценят в нашей работе.</p>
+        </div>
+
+        <div class="t-wrap">
+          <div class="t-shell reveal" aria-label="Карусель отзывов">
+            <div class="t-viewport" id="tViewport" tabindex="0" aria-label="Отзывы (управление стрелками)">
+              <div class="t-track" id="tTrack" aria-live="polite">
+                <div class="t-item" role="group" aria-roledescription="slide">
+                  <p class="t-quote">“Очень аккуратно,без боли. Всё объяснили,дали план и сразу стало спокойнее. Результатом довольна.”</p>
+                  <div class="t-who">
+                    <div>
+                      <strong>Марина</strong>
+                      <div class="sub">Терапия</div>
+                    </div>
+                    <div class="stars" aria-label="Оценка 5 из 5">
+                      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3 7 7 .6-5.3 4.6 1.6 7-6.3-3.9-6.3 3.9 1.6-7L2 9.6 9 9z"/></svg>
+                      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3 7 7 .6-5.3 4.6 1.6 7-6.3-3.9-6.3 3.9 1.6-7L2 9.6 9 9z"/></svg>
+                      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3 7 7 .6-5.3 4.6 1.6 7-6.3-3.9-6.3 3.9 1.6-7L2 9.6 9 9z"/></svg>
+                      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3 7 7 .6-5.3 4.6 1.6 7-6.3-3.9-6.3 3.9 1.6-7L2 9.6 9 9z"/></svg>
+                      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3 7 7 .6-5.3 4.6 1.6 7-6.3-3.9-6.3 3.9 1.6-7L2 9.6 9 9z"/></svg>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="t-item" role="group" aria-roledescription="slide">
+                  <p class="t-quote">“Делал лечение каналов. Сложно,но сделали уверенно и чётко. После - всё ок.”</p>
+                  <div class="t-who">
+                    <div>
+                      <strong>Егор</strong>
+                      <div class="sub">Эндодонтия</div>
+                    </div>
+                    <div class="stars" aria-label="Оценка 5 из 5">
+                      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3 7 7 .6-5.3 4.6 1.6 7-6.3-3.9-6.3 3.9 1.6-7L2 9.6 9 9z"/></svg>
+                      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3 7 7 .6-5.3 4.6 1.6 7-6.3-3.9-6.3 3.9 1.6-7L2 9.6 9 9z"/></svg>
+                      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3 7 7 .6-5.3 4.6 1.6 7-6.3-3.9-6.3 3.9 1.6-7L2 9.6 9 9z"/></svg>
+                      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3 7 7 .6-5.3 4.6 1.6 7-6.3-3.9-6.3 3.9 1.6-7L2 9.6 9 9z"/></svg>
+                      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3 7 7 .6-5.3 4.6 1.6 7-6.3-3.9-6.3 3.9 1.6-7L2 9.6 9 9z"/></svg>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="t-item" role="group" aria-roledescription="slide">
+                  <p class="t-quote">“Ребёнок боялся,но врач нашёл подход. Теперь ходим без слёз. Спасибо.”</p>
+                  <div class="t-who">
+                    <div>
+                      <strong>Наталья</strong>
+                      <div class="sub">Детский приём</div>
+                    </div>
+                    <div class="stars" aria-label="Оценка 5 из 5">
+                      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3 7 7 .6-5.3 4.6 1.6 7-6.3-3.9-6.3 3.9 1.6-7L2 9.6 9 9z"/></svg>
+                      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3 7 7 .6-5.3 4.6 1.6 7-6.3-3.9-6.3 3.9 1.6-7L2 9.6 9 9z"/></svg>
+                      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3 7 7 .6-5.3 4.6 1.6 7-6.3-3.9-6.3 3.9 1.6-7L2 9.6 9 9z"/></svg>
+                      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3 7 7 .6-5.3 4.6 1.6 7-6.3-3.9-6.3 3.9 1.6-7L2 9.6 9 9z"/></svg>
+                      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3 7 7 .6-5.3 4.6 1.6 7-6.3-3.9-6.3 3.9 1.6-7L2 9.6 9 9z"/></svg>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="t-item" role="group" aria-roledescription="slide">
+                  <p class="t-quote">“Протезирование сделали очень аккуратно. По ощущениям как свои зубы. Рекомендую.”</p>
+                  <div class="t-who">
+                    <div>
+                      <strong>Виктор</strong>
+                      <div class="sub">Ортопедия</div>
+                    </div>
+                    <div class="stars" aria-label="Оценка 5 из 5">
+                      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3 7 7 .6-5.3 4.6 1.6 7-6.3-3.9-6.3 3.9 1.6-7L2 9.6 9 9z"/></svg>
+                      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3 7 7 .6-5.3 4.6 1.6 7-6.3-3.9-6.3 3.9 1.6-7L2 9.6 9 9z"/></svg>
+                      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3 7 7 .6-5.3 4.6 1.6 7-6.3-3.9-6.3 3.9 1.6-7L2 9.6 9 9z"/></svg>
+                      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3 7 7 .6-5.3 4.6 1.6 7-6.3-3.9-6.3 3.9 1.6-7L2 9.6 9 9z"/></svg>
+                      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3 7 7 .6-5.3 4.6 1.6 7-6.3-3.9-6.3 3.9 1.6-7L2 9.6 9 9z"/></svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="t-controls">
+              <div class="t-buttons">
+                <button class="icon-btn" id="tPrev" type="button" aria-label="Предыдущий отзыв">
+                  <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </button>
+                <button class="icon-btn" id="tNext" type="button" aria-label="Следующий отзыв">
+                  <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </button>
+              </div>
+
+              <div class="dots" id="tDots" aria-label="Переход к отзыву"></div>
+
+              <a class="btn btn--ghost" href="#location" aria-label="Записаться">
+                Записаться
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section class="section" id="pricing">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Цены и планы</h2>
+          <p>Примерные пакеты для понимания. Точная стоимость зависит от клинической ситуации.</p>
+        </div>
+
+        <div class="pricing-grid">
+          <article class="card plan reveal">
+            <div class="body">
+              <h3>Базовый</h3>
+              <p class="price">Консультация</p>
+              <div class="sub">Осмотр + план лечения</div>
+              <ul class="list">
+                <li><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 6l-9 12-4-4" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>Чёткое объяснение по шагам</li>
+                <li><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 6l-9 12-4-4" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>Ответы на вопросы</li>
+                <li><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 6l-9 12-4-4" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>Рекомендации по уходу</li>
+              </ul>
+              <div class="meta" style="margin-top:1rem;">
+                <a class="btn btn--ghost" href="#location">Записаться</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card plan reveal" data-featured="true">
+            <div class="ribbon">Рекомендуем</div>
+            <div class="body">
+              <h3>Комплекс</h3>
+              <p class="price">Профилактика</p>
+              <div class="sub">Гигиена + контроль</div>
+              <ul class="list">
+                <li><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 6l-9 12-4-4" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>Профессиональная чистка</li>
+                <li><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 6l-9 12-4-4" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>Профилактика воспалений</li>
+                <li><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 6l-9 12-4-4" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>Персональные рекомендации</li>
+              </ul>
+              <div class="meta" style="margin-top:1rem;">
+                <a class="btn btn--primary" href="#location">Записаться</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card plan reveal">
+            <div class="body">
+              <h3>Премиум</h3>
+              <p class="price">Восстановление</p>
+              <div class="sub">Ортопедия или имплантация</div>
+              <ul class="list">
+                <li><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 6l-9 12-4-4" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>Планирование под пациента</li>
+                <li><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 6l-9 12-4-4" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>Эстетика и функция</li>
+                <li><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 6l-9 12-4-4" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>Долгосрочная стратегия</li>
+              </ul>
+              <div class="meta" style="margin-top:1rem;">
+                <a class="btn btn--ghost" href="#location">Записаться</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>FAQ</h2>
+          <p>Короткие ответы на частые вопросы. Для записи - звонок или Telegram.</p>
+        </div>
+
+        <div class="faq reveal" id="faqRoot" aria-label="Часто задаваемые вопросы">
+          <details>
+            <summary>
+              Как записаться на приём?
+              <svg class="chev" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </summary>
+            <div class="content">
+              Позвоните по телефону или напишите в Telegram. Мы уточним детали и предложим удобное время.
+            </div>
+          </details>
+
+          <details>
+            <summary>
+              Вы принимаете детей?
+              <svg class="chev" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </summary>
+            <div class="content">
+              Да,есть детский приём. Мы стараемся,чтобы ребёнку было спокойно и безопасно.
+            </div>
+          </details>
+
+          <details>
+            <summary>
+              Можно ли узнать стоимость заранее?
+              <svg class="chev" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </summary>
+            <div class="content">
+              После диагностики мы составим план лечения и согласуем стоимость. Так вы понимаете объём и этапы.
+            </div>
+          </details>
+
+          <details>
+            <summary>
+              Как быстро можно попасть на приём?
+              <svg class="chev" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </summary>
+            <div class="content">
+              Зависит от расписания. Обычно предлагаем ближайшие доступные окна и подбираем время под вас.
+            </div>
+          </details>
+
+          <details>
+            <summary>
+              Есть ли гарантия на работы?
+              <svg class="chev" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </summary>
+            <div class="content">
+              Условия зависят от вида лечения. На приёме объясним,что входит в гарантию и что важно для результата.
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTS + LOCATION -->
+    <section class="section" id="location">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Контакты и карта</h2>
+          <p>Запись по телефону или через Telegram. Ниже - адрес и рабочая Google Maps карта.</p>
+        </div>
+
+        <div class="location-grid">
+          <div class="location-stack">
+            <div class="contact-card reveal" aria-label="Контакты клиники">
+              <h3 style="margin:0;font-size:var(--h3);line-height:1.2;">Every Dental Care</h3>
+              <p style="margin:0;color:var(--muted);font-size:var(--p);">Диагностика, профилактика, лечение, протезирование, имплантация, отбеливание. Приём детей,взрослых и возрастных пациентов.</p>
+
+              <div class="contact-lines">
+                <div class="line">
+                  <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="M12 21s7-4.4 7-11a7 7 0 1 0-14 0c0 6.6 7 11 7 11Z" stroke="currentColor" stroke-width="1.7"/>
+                    <path d="M12 12.2a2.2 2.2 0 1 0 0-4.4 2.2 2.2 0 0 0 0 4.4Z" stroke="currentColor" stroke-width="1.7"/>
+                  </svg>
+                  <div style="min-width:0">
+                    <div>str. Zelinski 33/1</div>
+                    <div class="hint">Кишинёв</div>
+                  </div>
+                </div>
+
+                <div class="line">
+                  <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="M7.5 10.2c1.6 3.1 3.8 5.3 6.9 6.9l2.3-2.3c.4-.4 1-.5 1.5-.3 1 .4 2.1.6 3.3.6.8 0 1.5.7 1.5 1.5v3.4c0 .8-.7 1.5-1.5 1.5C10.9 21.5 2.5 13.1 2.5 2.5 2.5 1.7 3.2 1 4 1h3.4c.8 0 1.5.7 1.5 1.5 0 1.2.2 2.3.6 3.3.2.5.1 1.1-.3 1.5L7.5 10.2Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
+                  </svg>
+                  <div style="min-width:0">
+                    <div><a href="tel:+37369517179">+373 69 51 71 79</a></div>
+             <div><a href="tel:+37379314614">+373 79 31 46 14</a></div>
+                  </div>
+                </div>
+
+                <div class="line">
+                  <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="M4 7l8 6 8-6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+                    <path d="M4 7v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2H6c-1.1 0-2 .9-2 2Z" stroke="currentColor" stroke-width="1.7"/>
+                  </svg>
+                  <div><a href="mailto:everydentalcare@gmail.com">everydentalcare@gmail.com</a></div>
+                </div>
+
+                <div class="line">
+                  <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="M8 3h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8a5 5 0 0 1 5-5Z" stroke="currentColor" stroke-width="1.7"/>
+                    <path d="M12 16.2a4.2 4.2 0 1 0 0-8.4 4.2 4.2 0 0 0 0 8.4Z" stroke="currentColor" stroke-width="1.7"/>
+                    <path d="M17.4 6.6h.01" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/>
+                  </svg>
+                  <div><a href="https://www.instagram.com/everydentalcare.md/" target="_blank" rel="noopener noreferrer">Instagram: everydentalcare.md</a></div>
+                </div>
+              </div>
+
+              <div class="socials" aria-label="Соцсети">
+                <a class="social-link" href="https://www.instagram.com/everydentalcare.md/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                  <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="M8 3h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8a5 5 0 0 1 5-5Z" stroke="currentColor" stroke-width="1.7"/>
+                    <path d="M12 16.2a4.2 4.2 0 1 0 0-8.4 4.2 4.2 0 0 0 0 8.4Z" stroke="currentColor" stroke-width="1.7"/>
+                    <path d="M17.4 6.6h.01" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/>
+                  </svg>
+                  Instagram
+                </a>
+
+                <a class="social-link" href="https://t.me/everydentalcare" target="_blank" rel="noopener noreferrer" aria-label="Telegram" data-tg>
+                  <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="M21.2 4.6 3.6 11.7c-.9.4-.8 1.7.2 2l4.3 1.4 1.6 5.2c.3.9 1.5 1 2 .2l2.7-4.1 4.7 3.5c.7.5 1.7.1 1.9-.8l2.6-13.3c.2-1-.7-1.8-1.7-1.3Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
+                    <path d="M8.2 15.1 19.6 6.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+                  </svg>
+                  Telegram
+                </a>
+              </div>
+
+              <div class="hint">Telegram: t.me/everydentalcare</div>
+            </div>
+
+            <div class="contact-card reveal" aria-label="Быстрые действия">
+              <h3 style="margin:0;font-size:var(--h3);line-height:1.2;">Быстрое действие</h3>
+              <p style="margin:0;color:var(--muted);font-size:var(--p);">Если вы уже рядом - откройте карту и постройте маршрут. Если срочно - звонок.</p>
+              <div style="display:flex;gap:0.65rem;flex-wrap:wrap;">
+                <a class="btn btn--primary" href="tel:+37379314614" aria-label="Позвонить">Позвонить</a>
+                <a class="btn btn--ghost" href="https://t.me/everydentalcare" target="_blank" rel="noopener noreferrer" aria-label="Написать в Telegram">Telegram</a>
+                <a class="btn btn--soft" href="https://maps.app.goo.gl/swWyubsmqRcf2yvh8" target="_blank" rel="noopener noreferrer" aria-label="Открыть Google Maps">Открыть карту</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="mapbox reveal" aria-label="Карта Google Maps (iframe)">
+            <div class="map" aria-label="Карта (квадрат)">
+              <iframe
+                title="Every Dental Care - Google Maps"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                src="https://www.google.com/maps?q=str.+Zelinski+33%2F1+Chi%C8%99in%C4%83u&output=embed">
+              </iframe>
+            </div>
+            <div class="footer">
+              <small>Карта загружается напрямую в iframe.</small>
+              <small>
+                <a href="https://maps.app.goo.gl/swWyubsmqRcf2yvh8" target="_blank" rel="noopener noreferrer"
+                   style="text-decoration:underline;text-underline-offset:0.18em;color:color-mix(in srgb,var(--primary-2) 70%, var(--primary));">
+                  Открыть в Google Maps
+                </a>
+              </small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <div class="brand" style="gap:0.75rem;">
+              <div class="brand-logo" aria-hidden="true">
+                <img src="/logo.png" alt="Логотип Every Dental Care" loading="lazy" decoding="async" />
+              </div>
+              <div class="brand-title">
+                <strong>Every Dental Care</strong>
+                <span>Диагностика, профилактика, лечение, протезирование, имплантация, отбеливание</span>
+              </div>
+            </div>
+
+            <div class="socials" style="margin-top:0.9rem;" aria-label="Соцсети внизу">
+              <a class="social-link" href="https://www.instagram.com/everydentalcare.md/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M8 3h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8a5 5 0 0 1 5-5Z" stroke="currentColor" stroke-width="1.7"/>
+                  <path d="M12 16.2a4.2 4.2 0 1 0 0-8.4 4.2 4.2 0 0 0 0 8.4Z" stroke="currentColor" stroke-width="1.7"/>
+                  <path d="M17.4 6.6h.01" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/>
+                </svg>
+                Instagram
+              </a>
+
+              <a class="social-link" href="https://t.me/everydentalcare" target="_blank" rel="noopener noreferrer" aria-label="Telegram" data-tg>
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M21.2 4.6 3.6 11.7c-.9.4-.8 1.7.2 2l4.3 1.4 1.6 5.2c.3.9 1.5 1 2 .2l2.7-4.1 4.7 3.5c.7.5 1.7.1 1.9-.8l2.6-13.3c.2-1-.7-1.8-1.7-1.3Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
+                  <path d="M8.2 15.1 19.6 6.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+                </svg>
+                Telegram
+              </a>
+            </div>
+
+            <div class="legal">
+              © <span id="year"></span> Every Dental Care. Все права защищены.
+            </div>
+          </div>
+
+          <div class="foot-links" aria-label="Полезные ссылки">
+            <strong style="font-size:var(--h3);line-height:1.2;color:var(--text);">Контакты</strong>
+            <a href="tel:+37379314614">+373 79 314 614</a>
+            <a href="mailto:everydentalcare@gmail.com">everydentalcare@gmail.com</a>
+            <a href="https://www.instagram.com/everydentalcare.md/" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="https://t.me/everydentalcare" target="_blank" rel="noopener noreferrer">Telegram</a>
+            <a href="https://maps.app.goo.gl/swWyubsmqRcf2yvh8" target="_blank" rel="noopener noreferrer">Google Maps</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <!-- Sticky CTA (mobile) -->
+  <div class="mobile-cta" aria-label="Быстрые действия">
+    <div class="row">
+      <a class="btn btn--primary" href="tel:+37379314614" aria-label="Позвонить">Позвонить</a>
+      <a class="btn btn--ghost" href="#location" aria-label="Контакты и карта">Карта</a>
+    </div>
+  </div>
+
+  <!-- Back to top -->
+  <div class="to-top" id="toTop" aria-label="Наверх">
+    <button class="icon-btn" type="button" id="toTopBtn" aria-label="Прокрутить наверх">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M12 5l-7 7h4v7h6v-7h4l-7-7Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
+      </svg>
+    </button>
+  </div>
+
+  <!-- LIGHTBOX POPUP -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <div class="lb-panel" role="dialog" aria-modal="true" aria-label="Просмотр фото">
+      <div class="lb-top">
+        <div class="lb-title">
+          <strong id="lbTitle">Фото</strong>
+          <span id="lbSubtitle">Every Dental Care</span>
+        </div>
+        <button class="lb-x" id="lbClose" type="button" aria-label="Закрыть">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M6 6l12 12M18 6 6 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          </svg>
+        </button>
+      </div>
+
+      <div class="lb-mid" id="lbMid" aria-label="Фото область">
+        <img class="lb-img" id="lbImg" alt="Фото" />
+        <div class="lb-nav" aria-hidden="false">
+          <button class="icon-btn" id="lbPrev" type="button" aria-label="Предыдущее фото">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <button class="icon-btn" id="lbNext" type="button" aria-label="Следующее фото">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="lb-bottom">
+        <div class="lb-count" id="lbCount">1 / 1</div>
+        <a class="btn btn--ghost" href="#location" id="lbCta">Записаться</a>
+      </div>
+    </div>
+  </div>
+
+<script>
+  (function(){
+    const PHONE_HREF = 'tel:+37379314614';
+    const TG_URL = 'https://t.me/everydentalcare';
+
+    const $ = (sel, root=document) => root.querySelector(sel);
+    const $$ = (sel, root=document) => Array.from(root.querySelectorAll(sel));
+
+    // Year
+    const yearEl = $('#year');
+    if(yearEl) yearEl.textContent = new Date().getFullYear();
+
+    // Force all tel links to ONE number (requested)
+    $$('a[href^="tel:"]').forEach(a => { a.setAttribute('href', PHONE_HREF); });
+
+    // Force all telegram placeholders
+    $$('[data-tg]').forEach(a => {
+      a.setAttribute('href', TG_URL);
+      a.setAttribute('target','_blank');
+      a.setAttribute('rel','noopener noreferrer');
+    });
+
+    // Reduced motion
+    const reduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if(reduced){ document.documentElement.style.scrollBehavior = 'auto'; }
+
+    // Hamburger menu (phone fix)
+    const hamburger = $('#hamburger');
+    const mobileMenu = $('#mobileMenu');
+    const header = $('#siteHeader');
+
+    const setMenu = (open) => {
+      if(!hamburger || !mobileMenu) return;
+      hamburger.setAttribute('aria-expanded', String(open));
+      mobileMenu.dataset.open = open ? 'true' : 'false';
+      hamburger.setAttribute('aria-label', open ? 'Закрыть меню' : 'Открыть меню');
+      document.body.style.overflow = open ? 'hidden' : '';
+      document.documentElement.style.overflow = open ? 'hidden' : '';
+      if(open){
+        const firstLink = mobileMenu.querySelector('a');
+        if(firstLink) firstLink.focus({preventScroll:true});
+      }
+    };
+
+    hamburger?.addEventListener('click', (e) => {
+      e.preventDefault();
+      const open = hamburger.getAttribute('aria-expanded') === 'true';
+      setMenu(!open);
+    }, { passive:false });
+
+    $$('[data-mnav]').forEach(a => a.addEventListener('click', () => setMenu(false)));
+
+    document.addEventListener('keydown', (e) => {
+      if(e.key === 'Escape'){
+        if(hamburger && hamburger.getAttribute('aria-expanded') === 'true'){
+          setMenu(false);
+          hamburger.focus({preventScroll:true});
+        }
+      }
+    });
+
+    document.addEventListener('click', (e) => {
+      if(!hamburger || !mobileMenu) return;
+      const open = hamburger.getAttribute('aria-expanded') === 'true';
+      if(!open) return;
+      const within = hamburger.contains(e.target) || mobileMenu.contains(e.target);
+      if(!within) setMenu(false);
+    });
+
+    // Header compact: hide hamburger after small scroll for more space
+    let lastCompact = false;
+    const setCompact = (val) => {
+      if(!header) return;
+      if(val === lastCompact) return;
+      lastCompact = val;
+      header.dataset.compact = val ? 'true' : 'false';
+      if(val) setMenu(false);
+    };
+    const onHeaderScroll = () => {
+      const y = window.scrollY || 0;
+      if(y > 140) setCompact(true);
+      else if(y < 60) setCompact(false);
+    };
+    window.addEventListener('scroll', onHeaderScroll, { passive:true });
+    onHeaderScroll();
+
+    // Active nav highlight on scroll
+    const sections = ['services','gallery','team','testimonials','pricing','faq','location']
+      .map(id => document.getElementById(id))
+      .filter(Boolean);
+
+    const navAnchors = $$('[data-nav]');
+    const setActive = (id) => {
+      navAnchors.forEach(a => {
+        const match = a.dataset.nav === id;
+        if(match) a.setAttribute('aria-current','page');
+        else a.removeAttribute('aria-current');
+      });
+    };
+
+    if(sections.length && 'IntersectionObserver' in window){
+      const io = new IntersectionObserver((entries) => {
+        const visible = entries
+          .filter(e => e.isIntersecting)
+          .sort((a,b) => (b.intersectionRatio - a.intersectionRatio))[0];
+        if(visible && visible.target && visible.target.id){
+          setActive(visible.target.id);
+        }
+      }, {
+        root: null,
+        threshold: [0.18, 0.33, 0.5, 0.66],
+        rootMargin: '-35% 0px -55% 0px'
+      });
+      sections.forEach(s => io.observe(s));
+    }
+
+    // Reveal on scroll
+    const revealEls = $$('.reveal');
+    if(!reduced && 'IntersectionObserver' in window){
+      const rio = new IntersectionObserver((entries) => {
+        for(const e of entries){
+          if(e.isIntersecting){
+            e.target.dataset.in = 'true';
+            rio.unobserve(e.target);
+          }
+        }
+      }, { threshold: 0.12, rootMargin: '0px 0px -10% 0px' });
+      revealEls.forEach(el => rio.observe(el));
+    } else {
+      revealEls.forEach(el => el.dataset.in = 'true');
+    }
+
+    // Back to top
+    const toTop = $('#toTop');
+    const toTopBtn = $('#toTopBtn');
+    const onScroll = () => {
+      if(!toTop) return;
+      const show = window.scrollY > Math.max(420, window.innerHeight * 0.5);
+      toTop.dataset.show = show ? 'true' : 'false';
+    };
+    window.addEventListener('scroll', onScroll, { passive:true });
+    onScroll();
+    toTopBtn?.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: reduced ? 'auto' : 'smooth' });
+    });
+
+    // Testimonials carousel
+    const tTrack = $('#tTrack');
+    const tViewport = $('#tViewport');
+    const tPrev = $('#tPrev');
+    const tNext = $('#tNext');
+    const tDots = $('#tDots');
+    const slides = tTrack ? Array.from(tTrack.children) : [];
+    let idx = 0;
+    let timer = null;
+
+    const buildDots = () => {
+      if(!tDots) return;
+      tDots.innerHTML = '';
+      slides.forEach((_, i) => {
+        const b = document.createElement('button');
+        b.type = 'button';
+        b.className = 'dotbtn';
+        b.setAttribute('aria-label', `Перейти к отзыву ${i+1}`);
+        b.setAttribute('aria-current', i === idx ? 'true' : 'false');
+        b.addEventListener('click', () => goTo(i, true));
+        tDots.appendChild(b);
+      });
+    };
+
+    const updateSlidesA11y = () => {
+      slides.forEach((s, i) => {
+        s.setAttribute('aria-label', `${i+1} из ${slides.length}`);
+        s.setAttribute('aria-hidden', i === idx ? 'false' : 'true');
+        s.tabIndex = i === idx ? 0 : -1;
+      });
+      if(tDots){
+        Array.from(tDots.children).forEach((d, i) => {
+          d.setAttribute('aria-current', i === idx ? 'true' : 'false');
+        });
+      }
+    };
+
+    const goTo = (nextIndex, userAction=false) => {
+      if(!tTrack || slides.length === 0) return;
+      idx = (nextIndex + slides.length) % slides.length;
+      tTrack.style.transform = `translateX(${-idx * 100}%)`;
+      updateSlidesA11y();
+      if(userAction) resetAuto();
+    };
+
+    const resetAuto = () => {
+      if(timer) clearInterval(timer);
+      if(reduced) return;
+      timer = setInterval(() => goTo(idx + 1, false), 5200);
+    };
+
+    if(slides.length){
+      buildDots();
+      updateSlidesA11y();
+      goTo(0);
+      resetAuto();
+
+      tPrev?.addEventListener('click', () => goTo(idx - 1, true));
+      tNext?.addEventListener('click', () => goTo(idx + 1, true));
+
+      tViewport?.addEventListener('keydown', (e) => {
+        if(e.key === 'ArrowLeft') { e.preventDefault(); goTo(idx - 1, true); }
+        if(e.key === 'ArrowRight') { e.preventDefault(); goTo(idx + 1, true); }
+      });
+
+      const pause = () => { if(timer) clearInterval(timer); };
+      const resume = () => resetAuto();
+      tViewport?.addEventListener('mouseenter', pause);
+      tViewport?.addEventListener('mouseleave', resume);
+      tViewport?.addEventListener('focusin', pause);
+      tViewport?.addEventListener('focusout', resume);
+    }
+
+    // FAQ accordion: one open at a time
+    const faqRoot = $('#faqRoot');
+    if(faqRoot){
+      const all = Array.from(faqRoot.querySelectorAll('details'));
+      all.forEach(d => {
+        d.addEventListener('toggle', () => {
+          if(d.open){
+            all.forEach(other => { if(other !== d) other.open = false; });
+          }
+        });
+      });
+    }
+
+    // Image fallback
+    const attachImgFallback = (img) => {
+      const wrap = img.parentElement;
+      if(!wrap) return;
+
+      const addFallback = () => {
+        wrap.classList.add('img-fallback');
+        wrap.dataset.fallback = wrap.dataset.fallback || 'Изображение недоступно';
+      };
+      const removeFallback = () => {
+        wrap.classList.remove('img-fallback');
+      };
+
+      img.addEventListener('error', addFallback);
+      img.addEventListener('load', removeFallback);
+
+      if(img.complete){
+        if(img.naturalWidth > 0) removeFallback();
+        else addFallback();
+      }
+    };
+    $$('img').forEach(attachImgFallback);
+
+    // LIGHTBOX popup for gallery
+    const lb = $('#lightbox');
+    const lbImg = $('#lbImg');
+    const lbTitle = $('#lbTitle');
+    const lbSubtitle = $('#lbSubtitle');
+    const lbClose = $('#lbClose');
+    const lbPrev = $('#lbPrev');
+    const lbNext = $('#lbNext');
+    const lbCount = $('#lbCount');
+    const lbMid = $('#lbMid');
+
+    const items = $$('[data-lightbox]').map((a) => ({
+      el: a,
+      src: a.getAttribute('href'),
+      title: a.dataset.title || 'Фото',
+      subtitle: a.dataset.subtitle || ''
+    })).filter(x => !!x.src);
+
+    let lbIndex = 0;
+    let lastFocus = null;
+    let touchStartX = 0;
+    let touchStartY = 0;
+
+    const openLb = (i) => {
+      if(!lb || !lbImg || items.length === 0) return;
+      lbIndex = (i + items.length) % items.length;
+
+      const it = items[lbIndex];
+      lastFocus = document.activeElement;
+
+      lbImg.src = it.src;
+      lbImg.alt = it.title || 'Фото';
+      if(lbTitle) lbTitle.textContent = it.title || 'Фото';
+      if(lbSubtitle) lbSubtitle.textContent = it.subtitle || '';
+      if(lbCount) lbCount.textContent = `${lbIndex + 1} / ${items.length}`;
+
+      lb.dataset.open = 'true';
+      lb.setAttribute('aria-hidden','false');
+
+      document.body.style.overflow = 'hidden';
+      document.documentElement.style.overflow = 'hidden';
+
+      setTimeout(() => { lbClose?.focus({preventScroll:true}); }, 0);
+    };
+
+    const closeLb = () => {
+      if(!lb) return;
+      lb.dataset.open = 'false';
+      lb.setAttribute('aria-hidden','true');
+
+      document.body.style.overflow = '';
+      document.documentElement.style.overflow = '';
+
+      if(lastFocus && typeof lastFocus.focus === 'function'){
+        lastFocus.focus({preventScroll:true});
+      }
+    };
+
+    const nextLb = () => openLb(lbIndex + 1);
+    const prevLb = () => openLb(lbIndex - 1);
+
+    items.forEach((it, i) => {
+      it.el.addEventListener('click', (e) => {
+        e.preventDefault();
+        openLb(i);
+      });
+    });
+
+    lbClose?.addEventListener('click', closeLb);
+    lbPrev?.addEventListener('click', prevLb);
+    lbNext?.addEventListener('click', nextLb);
+
+    // click outside panel closes
+    lb?.addEventListener('click', (e) => {
+      const panel = lb.querySelector('.lb-panel');
+      if(panel && !panel.contains(e.target)) closeLb();
+    });
+
+    // CLOSE LIGHTBOX on any "#location" click (all "Записаться") incl. inside lightbox
+    const closeIfLbOpen = () => {
+      if(lb && lb.dataset.open === 'true') closeLb();
+    };
+
+    const lbCta = $('#lbCta');
+    lbCta?.addEventListener('click', () => closeIfLbOpen());
+
+    $$('a[href="#location"]').forEach(a => {
+      a.addEventListener('click', () => closeIfLbOpen());
+    });
+
+    // keys
+    document.addEventListener('keydown', (e) => {
+      if(!lb || lb.dataset.open !== 'true') return;
+      if(e.key === 'Escape') { e.preventDefault(); closeLb(); }
+      if(e.key === 'ArrowLeft') { e.preventDefault(); prevLb(); }
+      if(e.key === 'ArrowRight') { e.preventDefault(); nextLb(); }
+      if(e.key === 'Tab'){
+        const focusables = [lbClose, lbPrev, lbNext].filter(Boolean);
+        if(focusables.length === 0) return;
+        const first = focusables[0];
+        const last = focusables[focusables.length - 1];
+        if(e.shiftKey && document.activeElement === first){
+          e.preventDefault();
+          last.focus();
+        } else if(!e.shiftKey && document.activeElement === last){
+          e.preventDefault();
+          first.focus();
+        }
+      }
+    });
+
+    // swipe (mobile)
+    lbMid?.addEventListener('touchstart', (e) => {
+      const t = e.touches && e.touches[0];
+      if(!t) return;
+      touchStartX = t.clientX;
+      touchStartY = t.clientY;
+    }, { passive:true });
+
+    lbMid?.addEventListener('touchend', (e) => {
+      const t = e.changedTouches && e.changedTouches[0];
+      if(!t) return;
+      const dx = t.clientX - touchStartX;
+      const dy = t.clientY - touchStartY;
+      if(Math.abs(dx) > 45 && Math.abs(dy) < 60){
+        if(dx < 0) nextLb();
+        else prevLb();
+      }
+    }, { passive:true });
+
+  })();
+</script>
+
+</body>
+</html>
